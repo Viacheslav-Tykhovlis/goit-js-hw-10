@@ -19,17 +19,11 @@ function onSearch(evt) {
     return;
   }
   fetchCountries(searchText)
-    .then(data => {
-      if (data.status === 404) {
-        clearDisplay();
-        return Promise.reject(
-          Report.failure('Oops, there is no country with that name', '')
-        );
-      } else {
-        onFetchSuccess(data);
-      }
-    })
-    .catch(error => {});
+    .then(data => onFetchSuccess(data))
+    .catch(error => {
+      clearDisplay();
+      Report.failure('Oops, there is no country with that name', '');
+    });
 }
 
 function onFetchSuccess(countries) {
