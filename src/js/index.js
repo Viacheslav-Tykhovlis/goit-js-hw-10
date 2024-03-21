@@ -1,4 +1,4 @@
-import './css/styles.css';
+import '../css/styles.css';
 import { fetchCountries } from './fetchCountries';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 const debounce = require('lodash.debounce');
