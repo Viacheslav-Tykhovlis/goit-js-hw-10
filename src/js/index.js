@@ -2,7 +2,7 @@ import '../css/styles.css';
 import { fetchCountries } from './fetchCountries';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 const debounce = require('lodash.debounce');
-const DEBOUNCE_DELAY = 300;
+const DEBOUNCE_DELAY = 500;
 
 const refs = {
   inputEl: document.querySelector('#search-box'),
