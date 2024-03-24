@@ -31,18 +31,25 @@ body {
 }
 
 .header-inputStyle {
-  width: 25%;
+  border: 0.1rem solid transparent;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 0.8rem;
 
-  border-radius: 8px;
+  width: 25%;
   box-shadow: 0 0 15px 0 rgb(161, 160, 160);
 }
 
 #search-box {
-  border: none;
-  padding: 8px;
   width: 100%;
   height: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
 }
+
 .country-list {
   list-style: none;
   margin-top: 0;
